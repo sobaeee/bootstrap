@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BS5</title>
+<link rel="stylesheet" href="assets/css/normalize.css">
+<!-- 자바스크립트 -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- 부트스트랩도 jquery cdn이 필요하다. -->
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<style>
+@media ( min-width : 768px) {
+	.container {
+		width: 850px;
+	}
+}
+/* 넓이를 새로 정의해버리면 기존 것이 무시가 된다. */
+/* container : 여백을 놔둠.  containver-fluid : 여백 없는 100% */
+</style>
+
+</head>
+<body>
+	<div class="container">
+		<h1>
+			h1. Bootstrap heading <small>Secondary text</small>
+		</h1>
+		<h2>
+			h2. Bootstrap heading <span class="small">Secondary text</span>
+		</h2>
+		<h3>h3. Bootstrap heading</h3>
+		<h4>h4. Bootstrap heading</h4>
+		<h5>h5. Bootstrap heading</h5>
+		<h6>h6. Bootstrap heading</h6>
+		<p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum
+			faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+
+		<p class="text-left">좌측정렬된 텍스트.</p>
+		<p class="text-center">중앙정렬된 텍스트.</p>
+		<p class="text-right">우측정렬된 텍스트.</p>
+		<p class="text-justify">양쪽정렬된 텍스트.</p>
+		<p class="text-nowrap">그냥 텍스트.</p>
+
+		<ul class="list-inline">
+			<li>Lorem ipsum</li>
+			<li>Phasellus iaculis</li>
+			<li>Nulla volutpat</li>
+		</ul>
+
+		<dl class="dl-horizontal">
+			<dt>Description <kbd>cd</kbd> lists</dt>
+			<dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris
+				condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+		</dl>
+		
+		&lt; &gt; &copy; &amp;
+		<!-- < > © & -->
+	</div>
+	<!-- 자바스크립트 -->
+</body>
+</html>

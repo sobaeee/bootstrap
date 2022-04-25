@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BS7</title>
+<link rel="stylesheet" href="assets/css/normalize.css">
+<!-- 자바스크립트 -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- 부트스트랩도 jquery cdn이 필요하다. -->
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<form class="form-horizontal">
+			<!-- <div class="row"> -->
+			<div class="form-group">
+				<label class="sr-only" for="exampleInputEmail1">이메일 주소</label> <input
+					type="email" class="form-control" id="exampleInputEmail1"
+					placeholder="이메일을 입력하세요">
+				<!-- class="form-control" 를 주면 디자인이 예뻐짐. -->
+			</div>
+			<!-- </div> -->
+			<div class="form-group">
+				<label for="exampleInputPassword1">암호</label> <input type="password"
+					readonly class="form-control" id="exampleInputPassword1"
+					placeholder="암호">
+				<!-- disabled : 자료 전송시 전송을 안함. readonly는 함. -->
+			</div>
+			<div class="form-group">
+				<label for="exampleInputFile">파일 업로드</label> <input type="file"
+					id="exampleInputFile">
+				<p class="help-block">여기에 블록레벨 도움말 예제</p>
+			</div>
+			<div class="checkbox">
+				<label> <input type="checkbox"> 입력을 기억합니다
+				</label>
+			</div>
+			<button type="submit" class="btn btn-default">제출</button>
+
+			<select class="form-control">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+			</select>
+			<div class="form-group has-success has-feedback">
+				<label class="control-label" for="inputSuccess2">Input with
+					success</label> <input type="text" class="form-control" id="inputSuccess2"
+					aria-describedby="inputSuccess2Status"> <span
+					class="glyphicon glyphicon-ok form-control-feedback"
+					aria-hidden="true"></span> <span id="inputSuccess2Status"
+					class="sr-only">(success)</span>
+			</div>
+
+			<a href="#" class="btn btn-warning btn-block " role="button">링크</a>
+			<button class="btn btn-success btn-block ">버튼</button>
+
+			<img data-src="holder.js/140x140" class="img-rounded" alt="140x140"
+				src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4="
+				data-holder-rendered="true" style="width: 140px; height: 140px;">
+			<img data-src="holder.js/140x140" class="img-circle" alt="140x140"
+				src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4="
+				data-holder-rendered="true" style="width: 140px; height: 140px;">
+			<img data-src="holder.js/140x140" class="img-thumbnail" alt="140x140"
+				src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MTBwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj4xNDB4MTQwPC90ZXh0PjwvZz48L3N2Zz4="
+				data-holder-rendered="true" style="width: 140px; height: 140px;">
+
+			<h1 class="text-hide">Custom heading</h1>
+
+		</form>
+		<input type="checkbox" class="checkbox"> <input type="radio">
+		<!-- checkbox와 radio 에는 class="form-control"를 넣지 말아라~~~ -->
+	</div>
+	<!-- 자바스크립트 -->
+</body>
+</html>

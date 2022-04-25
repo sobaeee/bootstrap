@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BS9</title>
+<link rel="stylesheet" href="assets/css/normalize.css">
+<!-- 자바스크립트 -->
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+</head>
+<body>
+	<div class="container">
+		<div class="dropdown" id="myDropdown">
+			<a id="dLabel" data-toggle="dropdown" aria-haspopup="true"
+				role="button" aria-expanded="false"> Dropdown trigger <span
+				class="caret"></span>
+			</a>
+
+			<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+		</div>
+	</div>
+	<!-- 자바스크립트 -->
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#myDropdown').on('show.bs.dropdown', function() {
+				console.log("show")
+			})
+			$('#myDropdown').on('shown.bs.dropdown', function() {
+				console.log("shown")
+			})
+			$('#myDropdown').on('hide.bs.dropdown', function() {
+				console.log("hide")
+			})
+			$('#myDropdown').on('hidden.bs.dropdown', function() {
+				console.log("hidden")
+			})
+		});
+	</script>
+</body>
+</html>
